@@ -5,14 +5,14 @@ const BackToTop = () => {
   const scrollHandler = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  const setHendler = () => {
+  const windowScroll = () => {
     setScrollToTop(window.scrollY > 180);
   };
   useEffect(() => {
-    window.addEventListener("scroll", setHendler);
+    window.addEventListener("scroll", windowScroll);
   });
   return (
-    <div>
+    <>
       {scrollTop && (
         <button
           onClick={scrollHandler}
@@ -21,11 +21,11 @@ const BackToTop = () => {
           <img
             className="size-12 animate-bounce min-[1920.98px]:size-16 max-md:size-10"
             src="./assets/images/back-to-top.webp"
-            alt=""
+            alt="back to top"
           />
         </button>
       )}
-    </div>
+    </>
   );
 };
 

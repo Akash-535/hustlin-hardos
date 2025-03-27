@@ -33,14 +33,16 @@ const BreakingNews = () => {
         “BREAKING NEWS: Hustlin Hardos set to launch the most anticipated NFT
         project of 2022"
       </h3>
-      <div className="border-y-2 border-black flex items-center justify-center">
+      <div className="border-y-2 border-black flex items-center justify-center max-xl:px-4">
         <div className="max-w-[1140px] mx-auto border-l-2 max-lg:border-x-2 border-black flex items-center justify-center max-lg:flex-col max-md:mx-4">
           <div className="pl-[43px] pr-[52px] w-full max-lg:px-10 max-lg:py-5 max-md:px-6">
-            <Description className="pb-4 max-w-[475px] max-lg:pb-2">
-              March 1, 2022 by Editor Hardo
-            </Description>
-            <Description className="pb-4 max-w-[475px] text-lg leading-150 max-lg:pb-2 max-lg:text-base max-md:text-sm max-lg:max-w-[389px]">
-              Hustlin' Hardos is a collection of 9,999 NFT characters on the
+            <Description
+              myClass="pb-4 max-w-[475px] max-lg:pb-2"
+              text="March 1, 2022 by Editor Hardo"
+            />
+            <Description
+              myClass="pb-4 max-w-[475px] text-lg leading-150 max-lg:pb-2 max-lg:text-base max-md:text-sm max-lg:max-w-[389px]"
+              text="   Hustlin' Hardos is a collection of 9,999 NFT characters on the
               Ethereum Blockchain, inspired by the business/finance world,
               hustler culture and web3 aesthetics. Each Hustlin' Hardo is a
               completely original and unique combination of hundreds of
@@ -49,9 +51,12 @@ const BreakingNews = () => {
               features truly unique and powerful artwork, while offering its
               holders first-of-its-kind utility. Your Huslin’ Hardo NFT is your
               gateway to The Boardroom, one of the most rewarding and engaging
-              online communities
-            </Description>
-            <Link href="#" className="underline decoration-black">
+              online communities"
+            />
+            <Link
+              href="#"
+              className="underline decoration-black hover:text-blue-v1 duration-300 ease-linear hover:decoration-blue-v1"
+            >
               Read More...
             </Link>
           </div>

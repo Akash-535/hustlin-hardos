@@ -7,7 +7,7 @@ import { SwiperArrowIcon, TwitterBlueIcon } from "@/utils/icons";
 import Link from "next/link";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -15,8 +15,8 @@ import "swiper/css/pagination";
 const LatestTweets = () => {
   return (
     <div className="pb-[88px] max-lg:pb-16 max-md:pb-10 max-sm:pb-6">
-      <div className="max-w-[1140px] mx-auto w-full flex items-center justify-between pb-[90px] max-lg:pb-16 max-md:pb-10 max-sm:pb-6 max-lg:px-4">
-        <Heading className="uppercase">Latest Tweets</Heading>
+      <div className="max-w-[1140px] mx-auto w-full flex items-center justify-between pb-[90px] max-lg:pb-16 max-md:pb-10 max-sm:pb-6 max-xl:px-4">
+        <Heading myClass="uppercase" text="Latest Tweets" />
         <div className="flex items-center gap-14 max-md:gap-10">
           <div className="prev-arrow cursor-pointer hover:-translate-x-1.5 duration-300 ease-linear">
             <SwiperArrowIcon />
@@ -47,15 +47,19 @@ const LatestTweets = () => {
               key={i}
               className="max-w-[380px] w-full mx-auto px-[25px] pt-12 pb-[46px] max-md:py-8 border-black border-r-2"
             >
-              <SubHeading className="font-semibold">{obj.heading}</SubHeading>
+              <SubHeading myClass="font-semibold" text={obj.heading} />
               <div className="flex items-center gap-2.5 pt-[13px]">
                 <TwitterBlueIcon />
                 <p className="text-sm leading-100">{obj.date}</p>
               </div>
-              <Description className="pt-3.5 pb-[15px] max-md:text-sm">
-                {obj.description}
-              </Description>
-              <Link href="#" className="underline decoration-black">
+              <Description
+                myClass="pt-3.5 pb-[15px] max-md:text-sm"
+                text={obj.description}
+              />
+              <Link
+                href="#"
+                className="underline decoration-black hover:text-blue-v1 duration-300 ease-linear hover:decoration-blue-v1"
+              >
                 Read More...
               </Link>
             </SwiperSlide>

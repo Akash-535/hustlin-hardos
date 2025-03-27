@@ -11,9 +11,10 @@ const Faq = () => {
   };
   return (
     <div id="faq">
-      <Heading className="pb-[89px] max-lg:pb-16 max-md:pb-10 max-sm:pb-6 max-xl:px-4 max-w-[1140px] mx-auto">
-        Faqs
-      </Heading>
+      <Heading
+        myClass="pb-[89px] max-lg:pb-16 max-md:pb-10 max-sm:pb-6 max-xl:px-4 max-w-[1140px] mx-auto"
+        text="Faqs"
+      />
       <div className="border-y-2 border-black px-4">
         <div className="border-x-2 border-black max-w-[1140px] mx-auto">
           {FAQ_LIST.map((obj, i) => (

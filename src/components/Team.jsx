@@ -2,12 +2,12 @@
 import Description from "@/common/Description";
 import Heading from "@/common/Heading";
 import SubHeading from "@/common/SubHeading";
-import { LATEST_TWEETS_LIST, TEAM_LIST } from "@/utils/helper";
-import { SwiperArrowIcon, TwitterBlueIcon } from "@/utils/icons";
+import { TEAM_LIST } from "@/utils/helper";
+import { SwiperArrowIcon } from "@/utils/icons";
 import Link from "next/link";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -17,7 +17,7 @@ const Team = () => {
   return (
     <div id="team" className="pb-[88px] max-lg:pb-16 max-md:pb-10 max-sm:pb-6">
       <div className="max-w-[1140px] mx-auto w-full flex items-center justify-between pb-[90px] max-lg:pb-16 max-md:pb-10 max-sm:pb-6 max-xl:px-4">
-        <Heading>Team</Heading>
+        <Heading text="Team" />
         <div className="flex items-center gap-14 max-md:gap-10">
           <div className="prev-arrow cursor-pointer hover:-translate-x-1.5 duration-300 ease-linear">
             <SwiperArrowIcon />
@@ -56,15 +56,15 @@ const Team = () => {
                 alt="toon img"
               />
               <SubHeading
-                className={`py-4 font-black ${
+                myClass={`py-4 font-black ${
                   i === 0 || i === 2 ? "text-brown-v1" : "text-white-v2"
                 }`}
-              >
-                {obj.title}
-              </SubHeading>
-              <Description className="max-md:text-sm text-center max-w-[407px] mx-auto">
-                {obj.description}
-              </Description>
+                text={obj.title}
+              />
+              <Description
+                myClass="max-md:text-sm text-center max-w-[407px] mx-auto"
+                text={obj.description}
+              />
             </SwiperSlide>
           ))}
         </Swiper>

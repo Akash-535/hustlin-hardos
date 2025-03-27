@@ -60,26 +60,28 @@ const Minting = () => {
       ref={sectionRef}
       className="pb-[88px] max-lg:pb-16 max-md:pb-10 max-sm:pb-6"
     >
-      <Heading className="pb-[89px] max-lg:pb-16 max-md:pb-10 max-sm:pb-6 max-lg:px-4 max-w-[1140px] mx-auto">
-        Minting
-      </Heading>
+      <Heading
+        myClass="pb-[89px] max-lg:pb-16 max-md:pb-10 max-sm:pb-6 max-xl:px-4 max-w-[1140px] mx-auto"
+        text=" Minting"
+      />
       <div className="border-y-2 border-black flex items-center justify-center max-xl:px-4 max-md:px-0">
         <div className="max-w-[1140px] mx-auto border-l-2 max-lg:border-x-2 border-black flex items-center justify-center max-lg:flex-col max-md:mx-4">
           <div className="pl-[25px] w-full max-lg:px-10 max-lg:py-5 max-md:px-6 pr-[107px] py-11 max-xl:px-5 max-xl:py-7">
-            <Description className="pb-[15px] max-w-[438px] leading-150 max-xl:pb-3 max-lg:pb-2 max-md:text-sm max-lg:max-w-[389px]">
-              Most of the Hustlin’ Hardos first experienced NFTs via other
+            <Description
+              myClass="pb-[15px] max-w-[438px] leading-150 max-xl:pb-3 max-lg:pb-2 max-md:text-sm max-lg:max-w-[389px]"
+              text="     Most of the Hustlin’ Hardos first experienced NFTs via other
               successful projects like NBA TopShot, where revealing your newly
               minted item invoked the same emotions as opening up that first
               pack of baseball cards. NFTs have allowed us to enjoy those
               feelings once again while also empowering communities through
               shared ownership. The space has seen incredible growth over the
               past year, and it is our belief that we are in the very early
-              innings of the paradigm shift that will be powered by web3.
-            </Description>
+              innings of the paradigm shift that will be powered by web3."
+            />
             <div className="border-2 border-black flex max-w-[238px] justify-between items-center overflow-hidden">
               <button
                 onClick={() => setCount(Math.max(count - 1, 0))}
-                className="cursor-pointer text-4xl leading-100 font-semibold px-6 max-lg:text-xl max-md:text-lg hover:bg-black hover:text-white duration-300 ease-linear min-h-[53px] max-h-[53px] max-lg:min-h-9"
+                className="cursor-pointer text-4xl leading-100 font-semibold px-6 max-lg:text-xl max-md:text-lg min-h-[53px] max-h-[53px] max-lg:min-h-9"
               >
                 -
               </button>
@@ -88,7 +90,7 @@ const Minting = () => {
               </p>
               <button
                 onClick={() => setCount(count + 1)}
-                className="cursor-pointer text-4xl leading-100 font-semibold px-6 max-lg:text-xl max-md:text-lg hover:bg-black hover:text-white duration-300 ease-linear min-h-[53px] max-h-[53px] max-lg:min-h-9"
+                className="cursor-pointer text-4xl leading-100 font-semibold px-6 max-lg:text-xl max-md:text-lg min-h-[53px] max-h-[53px] max-lg:min-h-9"
               >
                 +
               </button>

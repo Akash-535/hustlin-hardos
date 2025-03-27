@@ -1,10 +1,8 @@
 import React from "react";
 
-const Description = ({ children, className = "" }) => {
+const Description = ({ text, myClass }) => {
   return (
-    <p className={`text-base leading-100 font-normal ${className}`}>
-      {children}
-    </p>
+    <p className={`text-base leading-100 font-normal ${myClass}`}>{text}</p>
   );
 };
 

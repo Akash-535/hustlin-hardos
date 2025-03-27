@@ -25,7 +25,7 @@ export const SOCIAL_ICON_LIST = [
   },
   {
     icon: <SeaIcon />,
-    link: "https://www.sea.com",
+    link: "https://opensea.io/",
   },
 ];
 

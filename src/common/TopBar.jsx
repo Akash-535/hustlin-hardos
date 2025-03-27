@@ -8,7 +8,7 @@ const TopBar = () => {
       <Marquee
         pauseOnHover={true}
         direction="right"
-        className="flex items-center"
+        className="flex items-center max-w-[1920px] mx-auto"
       >
         {TOP_BAR_LIST.map((obj, i) => (
           <div

@@ -10,9 +10,10 @@ const Roadmap = () => {
       id="roadmap"
       className="pb-[88px] max-lg:pb-16 max-md:pb-10 max-sm:pb-6"
     >
-      <Heading className="pb-[89px] max-lg:pb-16 max-md:pb-10 max-sm:pb-6 max-lg:px-4 max-w-[1140px] mx-auto max-xl:px-4 ">
-        RoadMap
-      </Heading>
+      <Heading
+        myClass="pb-[89px] max-lg:pb-16 max-md:pb-10 max-sm:pb-6 max-lg:px-4 max-w-[1140px] mx-auto max-xl:px-4"
+        text="RoadMap"
+      />
       <div className="border-y-2 border-black px-4">
         <div className="max-w-[1140px] mx-auto w-full border-x-2 border-black">
           <div className="py-[99px] relative flex flex-col pl-9 max-xl:pl-6 max-lg:gap-10 max-lg:pl-20 max-md:gap-6 max-md:pl-[60px] max-md:pr-4 max-lg:py-16 max-md:py-10">
@@ -35,18 +36,18 @@ const Roadmap = () => {
                 <p className="text-sm leading-100 pb-2.5 max-lg:pb-1.5 max-md:text-xs">
                   {obj.phase}
                 </p>
-                <SubHeading className="pb-3 max-w-[460px] max-md:text-xl max-lg:pb-2 max-md:pb-1.5">
-                  {obj.title}
-                </SubHeading>
+                <SubHeading
+                  myClass="pb-3 max-w-[460px] max-md:text-xl max-lg:pb-2 max-md:pb-1.5"
+                  text={obj.title}
+                />
                 <Description
-                  className={`max-lg:text-sm leading-100 ${
+                  myClass={`max-lg:text-sm ${
                     i === 0 || i === 2 || i === 4 || i === 6
-                      ? "max-w-[495px]"
-                      : "max-w-[460px]"
+                      ? "max-w-[495px] leading-120 max-lg:leading-100"
+                      : "max-w-[460px] leading-111 max-lg:leading-100"
                   }`}
-                >
-                  {obj.description}
-                </Description>
+                  text={obj.description}
+                />
               </div>
             ))}
           </div>
