@@ -25,6 +25,7 @@ const BreakingNews = () => {
   }, []);
   return (
     <div
+      id="about-us"
       ref={sectionRef}
       className="pb-[89px] max-lg:pb-16 max-md:pb-10 max-sm:pb-6"
     >

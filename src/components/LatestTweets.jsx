@@ -18,10 +18,10 @@ const LatestTweets = () => {
       <div className="max-w-[1140px] mx-auto w-full flex items-center justify-between pb-[90px] max-lg:pb-16 max-md:pb-10 max-sm:pb-6 max-lg:px-4">
         <Heading className="uppercase">Latest Tweets</Heading>
         <div className="flex items-center gap-14 max-md:gap-10">
-          <div className="prev-arrow cursor-pointer">
+          <div className="prev-arrow cursor-pointer hover:-translate-x-1.5 duration-300 ease-linear">
             <SwiperArrowIcon />
           </div>
-          <div className="next-arrow rotate-180 cursor-pointer">
+          <div className="next-arrow rotate-180 cursor-pointer hover:translate-x-1.5 duration-300 ease-linear">
             <SwiperArrowIcon />
           </div>
         </div>

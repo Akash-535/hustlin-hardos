@@ -14,7 +14,12 @@ const ConnectWallet = () => {
         </Link>
         <div className="flex items-center gap-[18px] max-md:gap-3">
           {SOCIAL_ICON_LIST.map((obj, i) => (
-            <Link key={i} href={obj.link} target="_blank">
+            <Link
+              key={i}
+              href={obj.link}
+              target="_blank"
+              className="hover:scale-110 duration-300 ease-linear"
+            >
               {obj.icon}
             </Link>
           ))}
