@@ -81,16 +81,16 @@ const Minting = () => {
             <div className="border-2 border-black flex max-w-[238px] justify-between items-center overflow-hidden">
               <button
                 onClick={() => setCount(Math.max(count - 1, 0))}
-                className="cursor-pointer text-4xl leading-100 font-semibold px-6 max-lg:text-xl max-md:text-lg min-h-[53px] max-h-[53px] max-lg:min-h-9"
+                className="cursor-pointer text-4xl leading-100 font-semibold min-w-[60px] max-lg:text-xl max-md:text-lg border-r-2 border-black hover:bg-black hover:text-white duration-300 ease-linear min-h-[53px] max-h-[53px] max-lg:min-h-9"
               >
                 -
               </button>
-              <p className="text-4xl leading-100 font-semibold px-6 max-lg:text-xl max-md:text-lg border-x-2 border-black min-h-[53px] flex justify-center items-center max-lg:min-h-9">
+              <p className="text-4xl leading-100 font-semibold min-w-[109px] max-w-[109px] max-lg:text-xl max-md:text-lg min-h-[53px] flex justify-center items-center max-lg:min-h-9">
                 {count}
               </p>
               <button
                 onClick={() => setCount(count + 1)}
-                className="cursor-pointer text-4xl leading-100 font-semibold px-6 max-lg:text-xl max-md:text-lg min-h-[53px] max-h-[53px] max-lg:min-h-9"
+                className="cursor-pointer text-4xl leading-100 font-semibold min-w-[60px] max-lg:text-xl max-md:text-lg border-l-2 border-black hover:bg-black hover:text-white duration-300 ease-linear min-h-[53px] max-h-[53px] max-lg:min-h-9"
               >
                 +
               </button>
