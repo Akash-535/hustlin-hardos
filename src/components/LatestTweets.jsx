@@ -47,7 +47,7 @@ const LatestTweets = () => {
               key={i}
               className="max-w-[380px] w-full mx-auto px-[25px] pt-12 pb-[46px] max-md:py-8 border-black border-r-2"
             >
-              <SubHeading>{obj.heading}</SubHeading>
+              <SubHeading className="font-semibold">{obj.heading}</SubHeading>
               <div className="flex items-center gap-2.5 pt-[13px]">
                 <TwitterBlueIcon />
                 <p className="text-sm leading-100">{obj.date}</p>

@@ -39,7 +39,7 @@ const Roadmap = () => {
                   {obj.title}
                 </SubHeading>
                 <Description
-                  className={`max-lg:text-sm ${
+                  className={`max-lg:text-sm leading-100 ${
                     i === 0 || i === 2 || i === 4 || i === 6
                       ? "max-w-[495px]"
                       : "max-w-[460px]"

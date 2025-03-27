@@ -1,3 +1,4 @@
+import BackToTop from "@/common/BackToTop";
 import BreakingNews from "@/components/BreakingNews";
 import Faq from "@/components/Faq";
 import Hero from "@/components/Hero";
@@ -16,6 +17,7 @@ export default function Home() {
       <Roadmap />
       <Team />
       <Faq />
+      <BackToTop />
     </>
   );
 }
